@@ -41,8 +41,11 @@ const config = {
         blue: {
           "100": "#E4ECFF",
         },
-        green: "#5AD767",
-        turquoise: "#77E8CA",
+        green: {
+          100: "#5AD767"
+        },
+        turquoise1: "#77E8CA",
+        grey: "#838995",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
