@@ -1,6 +1,7 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/text-generate-effect'
+import MagicButton from './ui/MagicButton'
 
 const Hero = () => {
   return (
@@ -11,25 +12,32 @@ const Hero = () => {
             <Spotlight className='top-28 left-80 h-[80vh]' fill='#5AD767' />
         </div>
         
-        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-small-white/[0.07] bg-grid-small-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-small-white/[0.1] bg-grid-small-black/[0.2] flex items-center justify-center absolute top-0 left-0">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
 
         <div className='flex justify-center relative my-20 z-10'>
             <div className='max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col justify-center items-center'>
-                <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
+                {/* <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>
                     Dynamic subheading #1
-                </h2>
+                </h2> */}
+
+                <p className='text-center text-5xl md:text-6xl'>
+                    Hi, I'm Liam.
+                </p>
 
                 <TextGenerateEffect 
-                    className="text-center md:text-5xl lg:text-6xl"
-                    words="Hi, I'm Liam."
+                    className="text-center text-2xl md:text-4xl "
+                    words="I'm an aspiring Data Scientist from the UK."
                 />
 
-                <p className='text-center md:tracking-wider mb-4 tex-sm md:text-lg lg:text-2xl'>
-                    I'm an aspiring Data Scientist from the UK.
-                </p>
+                <a href='#projects'>
+                    <MagicButton
+                    title="View my work"
+                    
+                    />
+                </a>
 
             </div>
         </div>
