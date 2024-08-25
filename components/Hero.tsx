@@ -29,7 +29,7 @@ const Hero = () => {
 
                 <TextGenerateEffect 
                     className="text-center text-2xl md:text-4xl "
-                    words="I'm an aspiring Data Scientist from the UK."
+                    words="I'm an aspiring Data Scientist from the UK"
                 />
 
                 <a href='#projects'>
