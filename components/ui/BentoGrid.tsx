@@ -45,8 +45,8 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background: '#030704',
-        backgroundColor: 'grandient',
+        background: 'rgb(3,7,4)',
+        backgroundColor: 'linear-gradient(90deg, rgba(3,7,4,1) 0%, rgba(44,76,68,1) 66%, rgba(81,215,103,1) 100%)'
       }}
     >
       <div className="group-hover/bento:translate-x-2 transition duration-200">
