@@ -25,11 +25,11 @@ const Hero = () => {
                 </p>
 
                 <TextGenerateEffect 
-                    className="text-center text-2xl md:text-4xl "
+                    className="heading"
                     words="I'm an aspiring Data Scientist from the UK."
                 />
 
-                <a href='#'>
+                <a href='mailto:liam@liamco.io'>
                     <MagicButton
                     title="Contact me"
                     
