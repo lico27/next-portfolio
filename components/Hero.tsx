@@ -29,9 +29,9 @@ const Hero = () => {
                     words="I'm an aspiring Data Scientist from the UK."
                 />
 
-                <a href='#projects'>
+                <a href='#'>
                     <MagicButton
-                    title="View my work"
+                    title="Contact me"
                     
                     />
                 </a>
