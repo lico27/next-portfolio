@@ -2,6 +2,7 @@ import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
 import MagicButton from './ui/MagicButton'
+import Socials from "./Socials";
 
 const Hero = () => {
   return (
@@ -12,7 +13,7 @@ const Hero = () => {
             <Spotlight className='top-28 left-80 h-[80vh]' fill='#5AD767' />
         </div>
         
-        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-grid-small-white/[0.1] bg-grid-small-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+        <div className="h-screen w-full dark:bg-black-100 bg-white  dark:bg-dot-white/[0.07] bg-dot-black/[0.2] flex items-center justify-center absolute top-0 left-0">
             {/* Radial gradient for the container to give a faded look */}
             <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
         </div>
@@ -29,12 +30,14 @@ const Hero = () => {
                     words="I'm an aspiring Data Scientist from the UK."
                 />
 
-                <a href='mailto:liam@liamco.io'>
+                <a href='mailto:liam@liamco.io' target='_blank'>
                     <MagicButton
                     title="Contact me"
-                    
+
                     />
                 </a>
+
+                <Socials />
 
             </div>
         </div>

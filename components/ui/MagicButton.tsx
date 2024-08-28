@@ -1,9 +1,9 @@
 import React from 'react'
 
 const MagicButton = ({
-    title, handleClick
+    title, icon, handleClick
 }: {
-    title: string; handleClick?: () => void;
+    title: string; icon?: React.ReactNode; handleClick?: () => void;
 }) => {
   return (
     <button className="bg-slate-800 no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-sm font-semibold leading-6  text-white inline-block">
@@ -13,6 +13,7 @@ const MagicButton = ({
     <div className="relative flex space-x-2 items-center z-10 rounded-full bg-black-100 py-0.5 px-4 ring-1 ring-white/10 ">
         <span>
         {title}
+        {icon}
         </span>
         <svg
         fill="none"
