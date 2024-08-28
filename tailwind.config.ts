@@ -34,9 +34,7 @@ const config = {
           300: "rgba(255, 255, 255, 0.125)",
         },
         white: {
-          DEFAULT: "#FFF",
-          100: "#BEC1DD",
-          200: "#C1C2D3",
+          DEFAULT: "#EBFAEC",
         },
         blue: {
           "100": "#E4ECFF",

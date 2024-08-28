@@ -4,7 +4,7 @@ import { HoverBorderGradient } from "./HoverBorderGradient";
 
 const ContactIcons = () => {
   return (
-    <div className="flex items-center md:gap-3 gap-6">
+    <div className="flex items-center gap-3">
       {contactDetails.map((info) => (
         <HoverBorderGradient
           key={info.id}
@@ -14,7 +14,9 @@ const ContactIcons = () => {
           duration={0.75}
         >
           <div className='rounded-lg'>
-            <info.img size={30} />
+            <info.img  
+              className='size-6 md:size-8'
+            />
           </div>
         </HoverBorderGradient>
       ))}
