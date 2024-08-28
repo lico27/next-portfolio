@@ -1,3 +1,7 @@
+import { FaLinkedinIn } from "react-icons/fa";
+import { TbBrandGithubFilled } from "react-icons/tb";
+import { FaThreads } from "react-icons/fa6";
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -139,14 +143,14 @@ export const navItems = [
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: FaLinkedinIn,
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: TbBrandGithubFilled,
     },
     {
       id: 3,
-      img: "/link.svg",
+      img: FaThreads,
     },
   ];

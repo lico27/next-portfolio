@@ -1,37 +1,19 @@
 import React from 'react'
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithubSquare } from "react-icons/fa";
-import { FaSquareThreads } from "react-icons/fa6";
-
-
+import { socialMedia } from "@/data/index";
 
 const Socials = () => {
   return (
-    <div className='my-10 z-10 flex'>
-        <div className='hover:shadow-2xl hover:shadow-emerald-500/[0.3] bg-transparent rounded-xl p-1'>
-            <a href="https://github.com/lico27"> 
-            <FaGithubSquare 
-            className="text-white-100 w-14 h-14"
-            /></a>
-        </div>
-
-        <div className='hover:shadow-2xl hover:shadow-emerald-500/[0.3] bg-transparent rounded-xl p-1'>
-            <a href="https://github.com/lico27"> 
-            <FaLinkedin 
-            className="text-white-100 w-14 h-14"
-            /></a>
-        </div>
-
-        <div className='hover:shadow-2xl hover:shadow-emerald-500/[0.3] bg-transparent rounded-xl p-1'>
-            <a href="https://github.com/lico27"> 
-            <FaSquareThreads 
-            className="text-white-100 w-14 h-14"
-            /></a>
-        </div>
-    </div>
+    <div className="flex items-center md:gap-3 gap-6 my-10">
+    {socialMedia.map((info) => (
+      <div
+        key={info.id}
+        className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 rounded-lg border border-black-300"
+      >
+        <info.img width={100} height={70} />
+      </div>
+    ))}
+  </div>
   )
 }
 
 export default Socials
-
-
