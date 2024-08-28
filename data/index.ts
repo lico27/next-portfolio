@@ -140,7 +140,7 @@ export const navItems = [
     },
   ];
   
-  export const socialMedia = [
+  export const contactDetails = [
     {
       id: 1,
       img: FaLinkedinIn,

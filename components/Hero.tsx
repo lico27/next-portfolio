@@ -1,8 +1,7 @@
 import React from 'react'
 import { Spotlight } from './ui/Spotlight'
 import { TextGenerateEffect } from './ui/TextGenerateEffect'
-import MagicButton from './ui/MagicButton'
-import Socials from "./Socials";
+import Contact from "./Contact";
 
 const Hero = () => {
   return (
@@ -30,14 +29,7 @@ const Hero = () => {
                     words="I'm an aspiring Data Scientist from the UK."
                 />
 
-                <a href='mailto:liam@liamco.io' target='_blank'>
-                    <MagicButton
-                    title="Contact me"
-
-                    />
-                </a>
-
-                <Socials />
+                <Contact />
 
             </div>
         </div>
