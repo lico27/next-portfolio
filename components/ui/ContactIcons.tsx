@@ -8,6 +8,8 @@ const ContactIcons = () => {
       {contactDetails.map((info) => (
         <HoverBorderGradient
           key={info.id}
+          as="a"
+          href={info.link}
           className="dark:bg-black dark:text-white flex items-center justify-center p-3 rounded-lg"
           duration={0.75}
         >

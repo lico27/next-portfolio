@@ -1,6 +1,7 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { TbBrandGithubFilled } from "react-icons/tb";
 import { FaThreads } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
 
 export const navItems = [
     { name: "About", link: "#about" },
@@ -144,13 +145,21 @@ export const navItems = [
     {
       id: 1,
       img: FaLinkedinIn,
+      link: "https://www.linkedin.com/in/liam-cottrell-a1837272",
     },
     {
       id: 2,
       img: TbBrandGithubFilled,
+      link: "https://github.com/lico27",
     },
     {
       id: 3,
       img: FaThreads,
+      link: "https://www.threads.net/@__lico27",
+    },
+    {
+      id: 4,
+      img: MdOutlineEmail,
+      link: "mailto:liam@liamco.io",
     },
   ];
