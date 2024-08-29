@@ -23,6 +23,7 @@ const Hero = () => {
                 </p>
 
                 <TextGenerateEffect 
+                    key="text-generate-effect"
                     className="heading"
                     words="I'm an aspiring Data Scientist from the UK."
                 />

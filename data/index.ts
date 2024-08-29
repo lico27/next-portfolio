@@ -12,8 +12,8 @@ import { MdOutlineEmail } from "react-icons/md";
   export const contactDetails = [
     {
       id: 1,
-      img: FaLinkedinIn,
-      link: "https://www.linkedin.com/in/liam-cottrell-a1837272",
+      img: MdOutlineEmail,
+      link: "mailto:liam@liamco.io",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ import { MdOutlineEmail } from "react-icons/md";
     },
     {
       id: 4,
-      img: MdOutlineEmail,
-      link: "mailto:liam@liamco.io",
+      img: FaLinkedinIn,
+      link: "https://www.linkedin.com/in/liam-cottrell-a1837272",
     },
   ];
