@@ -1,5 +1,4 @@
 import React from 'react'
-import { Spotlight } from './ui/Spotlight'
 import Contact from "./Contact";
 
 const Hero = () => {

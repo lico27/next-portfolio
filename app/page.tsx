@@ -1,15 +1,18 @@
+"use client";
 import Hero from "@/components/Hero";
 import ScrollingSkills from "@/components/ScrollingSkills";
-import {BackgroundBeams} from "@/components/ui/BackgroundBeams";
+import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
+import { NavbarOne } from "@/components/ui/NavbarOne";
 
 export default function Home() {
   return (
-    <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-      <div className="w-full h-screen">
-        <Hero />
-        <ScrollingSkills />
-        <BackgroundBeams />
-      </div>
-    </main>
+      <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+        <div className="w-full h-screen">
+        <NavbarOne />
+          <Hero />
+          <ScrollingSkills />
+          <BackgroundBeams />
+        </div>
+      </main>
   );
 }
