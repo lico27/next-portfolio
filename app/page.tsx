@@ -1,5 +1,6 @@
 import Hero from "@/components/Hero";
 import ScrollingSkills from "@/components/ScrollingSkills";
+import {BackgroundBeams} from "@/components/ui/BackgroundBeams";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
       <div className="w-full h-screen">
         <Hero />
         <ScrollingSkills />
+        <BackgroundBeams />
       </div>
     </main>
   );
