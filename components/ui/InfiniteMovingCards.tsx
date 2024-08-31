@@ -2,6 +2,7 @@
 
 import { cn } from "@/utils/cn";
 import React, { useEffect, useState } from "react";
+import { IconType } from "react-icons";
 
 export const InfiniteMovingCards = ({
   items,
@@ -12,6 +13,7 @@ export const InfiniteMovingCards = ({
 }: {
   items: {
     name: string;
+    icon: IconType;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -71,7 +73,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+        "scroller relative z-20  max-w-[75%] overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
         className
       )}
     >
@@ -85,7 +87,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className="w-[100px] h-[100px] max-w-full relative rounded-2xl flex-shrink-0 px-8 py-6 justify-center items-center p-1"
+            className="max-w-full relative flex-shrink-0 px-2 md:px-6 py-2 justify-center items-center p-1"
             key={item.name}
           >
             <blockquote>
@@ -97,11 +99,8 @@ export const InfiniteMovingCards = ({
               <div className="relative z-20 mt-2 flex flex-row items-center">
                 <span className="flex flex-col gap-1">
                   <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.name}
+                    <item.icon className="text-gray-400 size-5" />
                   </span>
-                  {/* <span className=" text-sm leading-[1.6] text-gray-400 font-normal">
-                    {item.title}
-                  </span> */}
                 </span>
               </div>
             </blockquote>
