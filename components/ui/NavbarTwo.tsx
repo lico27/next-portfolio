@@ -2,7 +2,6 @@
 import { cn } from "@/utils/cn";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
@@ -15,15 +14,15 @@ export function NavbarTwo() {
 const Navbar = () => {
   const navItems = [
     {
-      name: "Work",
+      name: "Skills",
       link: "#",
     },
     {
-      name: "Services",
+      name: "Projects",
       link: "#",
     },
     {
-      name: "Pricing",
+      name: "Certifications",
       link: "#",
     },
     {
@@ -48,11 +47,10 @@ const DesktopNav = ({ navItems }: any) => {
         setHovered(null);
       }}
       className={cn(
-        "hidden lg:flex flex-row self-start dark:bg-red-500 items-center justify-between py-2 max-w-7xl mx-auto px-4 rounded-full relative z-[60] w-full",
+        "hidden lg:flex flex-row self-start items-center justify-between py-2 max-w-7xl mx-auto px-4 rounded-full relative z-[60] w-full",
         "sticky top-40 inset-x-0"
       )}
     >
-      <Logo />
       <div className="lg:flex flex-row flex-1 hidden items-center justify-center space-x-2 lg:space-x-2 text-sm text-zinc-600 font-medium hover:text-zinc-800 transition duration-200">
         {navItems.map((navItem: any, idx: number) => (
           <Link
@@ -71,9 +69,6 @@ const DesktopNav = ({ navItems }: any) => {
           </Link>
         ))}
       </div>
-      <button className="hidden md:block px-8 py-2 text-sm font-bold rounded-full bg-black dark:bg-white dark:text-black  text-white shadow-[0px_-2px_0px_0px_rgba(255,255,255,0.4)_inset]">
-        Book a call
-      </button>
     </motion.div>
   );
 };
@@ -91,7 +86,6 @@ const MobileNav = ({ navItems }: any) => {
         className="flex relative flex-col lg:hidden w-full justify-between items-center bg-white dark:bg-neutral-950  max-w-[calc(100vw-2rem)] mx-auto px-4 py-2"
       >
         <div className="flex flex-row justify-between items-center w-full">
-          <Logo />
           {open ? (
             <IconX
               className="text-black dark:text-white"
@@ -124,9 +118,6 @@ const MobileNav = ({ navItems }: any) => {
                   <motion.span className="block">{navItem.name} </motion.span>
                 </Link>
               ))}
-              <button className="px-8 py-2 w-full rounded-lg bg-black dark:bg-white dark:text-black font-medium text-white shadow-[0px_-2px_0px_0px_rgba(255,255,255,0.4)_inset]">
-                Book a call
-              </button>
             </motion.div>
           )}
         </AnimatePresence>
@@ -135,19 +126,3 @@ const MobileNav = ({ navItems }: any) => {
   );
 };
 
-const Logo = () => {
-  return (
-    <Link
-      href="/"
-      className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
-    >
-      <Image
-        src="https://assets.aceternity.com/logo-dark.png"
-        alt="logo"
-        width={30}
-        height={30}
-      />
-      <span className="font-medium text-black dark:text-white">DevStudio</span>
-    </Link>
-  );
-};

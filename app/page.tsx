@@ -2,17 +2,19 @@
 import Hero from "@/components/Hero";
 import ScrollingSkills from "@/components/ScrollingSkills";
 import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
-import { NavbarOne } from "@/components/ui/NavbarOne";
+import { NavbarTwo } from "@/components/ui/NavbarTwo";
 
 export default function Home() {
   return (
-      <main className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
-        <div className="w-full h-screen">
-        <NavbarOne />
+   <div>
+      <NavbarTwo />
+      <div className="relative bg-black-100 flex flex-col items-center mx-auto sm:px-10 px-5">
+        <main className="w-full h-screen">
           <Hero />
           <ScrollingSkills />
           <BackgroundBeams />
-        </div>
-      </main>
+        </main>
+      </div>
+   </div>
   );
 }
