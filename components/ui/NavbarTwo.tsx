@@ -2,10 +2,11 @@
 import { cn } from "@/utils/cn";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-export function NavbarOne() {
+export function NavbarTwo() {
   return (
       <Navbar />
   );
@@ -14,11 +15,15 @@ export function NavbarOne() {
 const Navbar = () => {
   const navItems = [
     {
-      name: "Projects",
+      name: "Work",
       link: "#",
     },
     {
-      name: "Certifications",
+      name: "Services",
+      link: "#",
+    },
+    {
+      name: "Pricing",
       link: "#",
     },
     {
@@ -28,7 +33,7 @@ const Navbar = () => {
   ];
 
   return (
-    <div className="w-full">
+    <div className="w-[75vw] mx-auto">
       <DesktopNav navItems={navItems} />
       <MobileNav navItems={navItems} />
     </div>
@@ -43,7 +48,7 @@ const DesktopNav = ({ navItems }: any) => {
         setHovered(null);
       }}
       className={cn(
-        "hidden lg:flex flex-row self-start bg-white dark:bg-neutral-950 items-center justify-between py-2 max-w-7xl mx-auto px-4 rounded-full relative z-[60] w-full",
+        "hidden lg:flex flex-row self-start dark:bg-red-500 items-center justify-between py-2 max-w-7xl mx-auto px-4 rounded-full relative z-[60] w-full",
         "sticky top-40 inset-x-0"
       )}
     >
@@ -136,7 +141,12 @@ const Logo = () => {
       href="/"
       className="font-normal flex space-x-2 items-center text-sm mr-4  text-black px-2 py-1  relative z-20"
     >
-
+      <Image
+        src="https://assets.aceternity.com/logo-dark.png"
+        alt="logo"
+        width={30}
+        height={30}
+      />
       <span className="font-medium text-black dark:text-white">DevStudio</span>
     </Link>
   );

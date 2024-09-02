@@ -7,12 +7,6 @@ import { MdOutlineEmail } from "react-icons/md";
 import { IoLogoJavascript } from "react-icons/io5";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { PiFileSql } from "react-icons/pi";
-
-// export const navItems = [
-//     { name: "About", link: "#about" },
-//     { name: "Projects", link: "#projects" },
-//     { name: "Testimonials", link: "#testimonials" },
-//   ];
   
   export const contactDetails = [
     {
