@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ScrollingSkills from "@/components/ScrollingSkills";
 import { BackgroundBeams } from "@/components/ui/BackgroundBeams";
 import { NavbarTwo } from "@/components/ui/NavbarTwo";
+import { Certifications } from "@/components/Certifications";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
           <Hero />
           <ScrollingSkills />
           <BackgroundBeams />
+          <Certifications />
         </main>
       </div>
    </div>
