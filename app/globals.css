@@ -86,4 +86,8 @@
   .black-gradient {
     background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
   }
+
+  .subheading {
+    @apply font-bold text-lg md:text-2xl text-center text-white;
+  }
 }
