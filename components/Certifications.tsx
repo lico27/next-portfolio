@@ -1,61 +1,52 @@
 import { cn } from "@/utils/cn";
-import {
-  IconAdjustmentsBolt,
-  IconCloud,
-  IconCurrencyDollar,
-  IconEaseInOut,
-  IconHeart,
-  IconHelp,
-  IconRouteAltLeft,
-  IconTerminal2,
-} from "@tabler/icons-react";
+import { SiCodecademy } from "react-icons/si";
 
 export function Certifications() {
   const features = [
     {
-      title: "Built for developers",
+      title: "Learn SQL",
       description:
-        "Built for engineers, developers, dreamers, thinkers and doers.",
-      icon: <IconTerminal2 />,
+        "Complete",
+      icon: <SiCodecademy />,
     },
     {
-      title: "Ease of use",
+      title: ".",
       description:
-        "It's as easy as using an Apple, and as expensive as buying one.",
-      icon: <IconEaseInOut />,
+        ".",
+        icon: <SiCodecademy />,
     },
     {
-      title: "Pricing like no other",
+      title: ".",
       description:
-        "Our prices are best in the market. No cap, no lock, no credit card required.",
-      icon: <IconCurrencyDollar />,
+        ".",
+        icon: <SiCodecademy />,
     },
     {
-      title: "100% Uptime guarantee",
-      description: "We just cannot be taken down by anyone.",
-      icon: <IconCloud />,
+      title: ".",
+      description: ".",
+      icon: <SiCodecademy />,
     },
     {
-      title: "Multi-tenant Architecture",
-      description: "You can simply share passwords instead of buying new seats",
-      icon: <IconRouteAltLeft />,
+      title: ".",
+      description: ".",
+      icon: <SiCodecademy />,
     },
     {
-      title: "24/7 Customer Support",
+      title: ".",
       description:
-        "We are available a 100% of the time. Atleast our AI Agents are.",
-      icon: <IconHelp />,
+        ".",
+        icon: <SiCodecademy />,
     },
     {
-      title: "Money back guarantee",
+      title: ".",
       description:
-        "If you donot like EveryAI, we will convince you to like us.",
-      icon: <IconAdjustmentsBolt />,
+        ".",
+        icon: <SiCodecademy />,
     },
     {
-      title: "And everything else",
-      description: "I just ran out of copy ideas. Accept my sincere apologies",
-      icon: <IconHeart />,
+      title: ".",
+      description: ".",
+      icon: <SiCodecademy />,
     },
   ];
   return (

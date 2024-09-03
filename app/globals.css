@@ -91,3 +91,7 @@
     @apply font-bold text-lg md:text-2xl text-center text-white;
   }
 }
+
+body {
+  background-color: #000000;
+}
