@@ -19,6 +19,13 @@ const ScrollingSkills = () => {
                 speed="slow"
               />
             </div>
+            <div className="flex w-full items-center justify-center">
+                <h2 className="relative z-10 subheading underline decoration-2 decoration-green-100 underline-offset-4">Certifications</h2>
+                <h2 className="relative z-10 subheading">&nbsp;that I have&nbsp;</h2>
+                <h2 className="relative z-10 subheading underline decoration-2 decoration-green-100 underline-offset-4">completed</h2>
+                <h2 className="relative z-10 subheading">&nbsp;or am&nbsp;</h2>
+                <h2 className="relative z-10 subheading underline decoration-2 decoration-green-100 underline-offset-4">working towards:</h2>
+            </div>
         </div>
       );
     }

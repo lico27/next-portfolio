@@ -7,46 +7,54 @@ export function Certifications() {
       title: "Learn SQL",
       description:
         "Complete",
-      icon: <SiCodecademy />,
+      icon: <SiCodecademy size={40} />,
+      link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description:
         ".",
         icon: <SiCodecademy />,
+        link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description:
         ".",
         icon: <SiCodecademy />,
+        link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description: ".",
       icon: <SiCodecademy />,
+      link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description: ".",
       icon: <SiCodecademy />,
+      link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description:
         ".",
         icon: <SiCodecademy />,
+        link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description:
         ".",
         icon: <SiCodecademy />,
+        link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
     {
       title: ".",
       description: ".",
       icon: <SiCodecademy />,
+      link: "https://www.codecademy.com/profiles/lico27/certificates/042a4e5884e3eb6ea1f2a12be6abb851",
     },
   ];
   return (
@@ -63,11 +71,13 @@ const Feature = ({
   description,
   icon,
   index,
+  link,
 }: {
   title: string;
   description: string;
   icon: React.ReactNode;
   index: number;
+  link: string;
 }) => {
   return (
     <div
@@ -89,7 +99,12 @@ const Feature = ({
       <div className="text-lg font-bold mb-2 relative z-10 px-10">
         <div className="absolute left-0 inset-y-0 h-6 group-hover/feature:h-8 w-1 rounded-tr-full rounded-br-full bg-neutral-300 dark:bg-neutral-700 group-hover/feature:bg-blue-500 transition-all duration-200 origin-center" />
         <span className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100">
+        <a
+          href={link}
+          className="group-hover/feature:translate-x-2 transition duration-200 inline-block text-neutral-800 dark:text-neutral-100"
+        >
           {title}
+        </a>
         </span>
       </div>
       <p className="text-sm text-neutral-600 dark:text-neutral-300 max-w-xs relative z-10 px-10">
